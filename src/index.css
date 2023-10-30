@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* App.css */
+
+.mortgage-calculator {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform: scale(1);
+
+  /* Add a hover effect */
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.mortgage-calculator h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mortgage-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mortgage-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0074D9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.mortgage-form button:hover {
+  background-color: #0056b3;
+}
+
+.mortgage-results {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mortgage-results h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.mortgage-results p {
+  font-size: 18px;
+  color: #0074D9;
+  margin-top: 10px;
+}
