@@ -13,9 +13,9 @@ code {
 }
 
 /* App.css */
-
+/* Apply a background color and more padding to the main container */
 .mortgage-calculator {
-  background-color: #f1f1f1;
+  background-color: #f7f7f7; /* Light gray background */
   border-radius: 10px;
   padding: 20px;
   margin: 0 auto;
@@ -23,13 +23,14 @@ code {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   transform: scale(1);
-
-  /* Add a hover effect */
-  &:hover {
-    transform: scale(1.02);
-  }
 }
 
+/* Add hover effect to the entire container */
+.mortgage-calculator:hover {
+  transform: scale(1.02);
+}
+
+/* Style the header */
 .mortgage-calculator h1 {
   text-align: center;
   font-size: 24px;
@@ -37,34 +38,43 @@ code {
   margin-bottom: 20px;
 }
 
+/* Style the form elements */
 .mortgage-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
+  /* padding: 12px; */
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 3;
 }
 
+/* Style the button */
 .mortgage-form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increased padding for better touch support */
   background-color: #0074D9;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px; /* Larger font size for better visibility */
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 16px; /* Increased top margin for spacing */
 }
 
 .mortgage-form button:hover {
   background-color: #0056b3;
 }
 
+/* Style the result section */
 .mortgage-results {
   margin-top: 20px;
   text-align: center;
+  background-color: #fff; /* White background for result section */
+  padding: 20px; /* Increased padding for better separation */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .mortgage-results h2 {

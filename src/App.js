@@ -12,9 +12,17 @@ class App extends Component {
       monthlyPayment: 0,
     };
   }
-  calculateMonthlyPayment = () => {
-    const monthlyPayment = (this.state.principal * this.state.monthlyInterestRate) / (1 - (1 + this.state.monthlyInterestRate) ** -this.state.loanTermMonths);
-    return monthlyPayment;
+  calculateMonthlyPayment = (principalAmount, interestRate, loanTerm) => {
+    const principal = parseFloat(principalAmount);
+    const annualInterestRate = parseFloat(interestRate) / 100; // Convert annual interest rate to a decimal
+    const monthlyInterestRate = annualInterestRate / 12; // Monthly interest rate
+    
+    const loanTermMonths = parseFloat(loanTerm) * 12; // Loan term in months
+    console.log("check 3 values", principal,annualInterestRate, monthlyInterestRate)
+    const monthlyPayment = (principal * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanTermMonths));
+    
+    console.log("calculate", monthlyPayment);
+    this.setState(prev => ({...prev, monthlyPayment}));
   };
 
   render() {
