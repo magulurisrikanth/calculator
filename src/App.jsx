@@ -5,6 +5,7 @@ import Homevsrent from '../src/pages/HomeVsRent';
 import './input.css'
 import Tabs from './components/macro/Tabs';
 import AppRouter from './routes/Routes';
+import Footer from './components/footer/Footer';
 
 function App(){
   
@@ -35,6 +36,7 @@ function App(){
       <div className='pageLayout p-4 bg-gray-300 min-h-screen overflow-auto'>
         <AppRouter />
       </div>
+      <Footer />
       </div>
     )
 }
