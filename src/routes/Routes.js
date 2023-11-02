@@ -6,7 +6,7 @@ import loadable from '@loadable/component';
 
 const MortgageCalculator = loadable(() => import(/* webpackChunkName: "home" */ '../pages/MortgageCalculator'));
 const HomeVsRent = loadable(() => import(/* webpackChunkName: "solutions" */ '../pages/HomeVsRent'));
-// const WhoWeAre = loadable(() => import(/* webpackChunkName: "whoweare" */ '../pages/WhoWeAre'));
+const CDdeposit = loadable(() => import(/* webpackChunkName: "whoweare" */ '../pages/CDdeposit'));
 
 const AppRouter = () => {
   return (
@@ -14,7 +14,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<MortgageCalculator />} />
         <Route path="/homevsrent" element={<HomeVsRent />} />
-        {/* <Route path="/solutions" element={<Solutions />} /> */}
+        <Route path="/cddeposit" element={<CDdeposit />} />
       </Routes>
     </Suspense>
   );

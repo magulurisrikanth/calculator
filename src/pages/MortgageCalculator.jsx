@@ -29,7 +29,7 @@ const MortgageForm = (props) => {
     // Calculate total interest paid
     const totalInterest = (monthlyPayment * numberOfPayments) - principal;
 
-    // Calculate yearly payments and total interest
+    
     const yearlyPayments = [];
     let remainingBalance = principal;
     for (let year = 1; year <= loanTerm; year++) {

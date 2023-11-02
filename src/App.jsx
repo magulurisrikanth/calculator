@@ -34,17 +34,6 @@ function App(){
       <Tabs />
       <div className='pageLayout p-4 bg-gray-300 min-h-screen overflow-auto'>
         <AppRouter />
-      {/* <div className="mortgage-calculator">
-        <h1>Mortgage Payoff Calculator</h1>
-        <MortgageCalculator
-          principal={calc.principal}
-          interestRate={calc.interestRate}
-          loanTerm={calc.loanTerm}
-          calculateMonthlyPayment={calculateMonthlyPayment}
-        />
-        <MortgageResults monthlyPayment={calc.monthlyPayment} />
-      </div>
-      <Homevsrent  /> */}
       </div>
       </div>
     )
