@@ -18,6 +18,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       "theme-gray-1": "#333333",
+      "bg-color":"#f3f3f3",
       greens: "#495057",
       primary: "#49B728",
       secondary: "#f47f20",

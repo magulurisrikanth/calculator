@@ -1,13 +1,13 @@
-// App.js
 import React, { useState } from "react";
 import CDForm from "../components/micro/CDForm";
 import CDResult from "../components/micro/CDResult";
 import CDGraph from "../components/micro/CDGraph";
+import { Heading } from "@chakra-ui/react";
 
 function CDdeposit() {
   const [result, setResult] = useState(null);
-  const [principal, setPrincipal] = useState(10000); // Initial deposit
-  const [rate, setRate] = useState(5); // Annual interest rate
+  const [principal] = useState(10000); // Initial deposit
+  const [rate] = useState(5); // Annual interest rate
 
   const calculateCD = (principal, rate, years) => {
     const interestRate = rate / 100;
@@ -18,8 +18,11 @@ function CDdeposit() {
   };
 
   return (
-    <div className="App min-h-screen bg-gray-100">
-      <h1 className="text-2xl text-center py-4 bg-blue-500 text-white">Certificate of Deposit Calculator</h1>
+    <div className="min-h-screen bg-bg-color p-4 border border-gray-300 rounded-lg shadow-md mx-auto ">
+      <Heading className="!text-2xl text-center py-4 text-black font-bold">
+        Certificate of Deposit Calculator
+        <div className="absolute bottom-0 left-0 right-0 m-auto top-[2rem] w-40 border-b-2 border-solid border-gray-500"></div>
+      </Heading>
       <CDForm onCalculate={calculateCD} />
       {result && <CDResult result={result} />}
       {result && (

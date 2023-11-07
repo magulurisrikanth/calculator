@@ -29,7 +29,6 @@ const MortgageForm = (props) => {
     // Calculate total interest paid
     const totalInterest = (monthlyPayment * numberOfPayments) - principal;
 
-    
     const yearlyPayments = [];
     let remainingBalance = principal;
     for (let year = 1; year <= loanTerm; year++) {
@@ -55,8 +54,10 @@ const MortgageForm = (props) => {
   };
 
   return (
-    <div className="mortgage-form">
-      <h2>Mortgage Details</h2>
+    <div className="mortgage-form min-h-screen !bg-bg-color p-4 border border-gray-300 rounded-lg shadow-md mx-auto">
+      <div className="w-full text-center mb-4">
+        <h3 className="text-2xl">Mortgage Details</h3>
+      </div>
       <div className="input-group">
         <label>Principal Amount ($):</label>
         <input
@@ -89,27 +90,29 @@ const MortgageForm = (props) => {
       <div className="result">
         <p>Total Interest Paid: ${formData.totalInterest.toFixed(2)}</p>
       </div>
-      <div className="yearly-payments">
-        <h3>Yearly Payments</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Yearly Principal</th>
-              <th>Yearly Interest</th>
-            </tr>
-          </thead>
-          <tbody>
-            {formData.yearlyPayments.map((payment, index) => (
-              <tr key={index}>
-                <td>{payment.year}</td>
-                <td>${payment.yearlyPrincipal.toFixed(2)}</td>
-                <td>${payment.yearlyInterest.toFixed(2)}</td>
+      {formData.yearlyPayments.length > 0 && (
+        <div className="yearly-payments">
+          <h3>Yearly Payments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Yearly Principal</th>
+                <th>Yearly Interest</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody>
+              {formData.yearlyPayments.map((payment, index) => (
+                <tr key={index}>
+                  <td>{payment.year}</td>
+                  <td>${payment.yearlyPrincipal.toFixed(2)}</td>
+                  <td>${payment.yearlyInterest.toFixed(2)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 };

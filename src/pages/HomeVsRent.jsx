@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./homevsrent.css"; // Make sure to create a CSS file for styling
 import { Grid, GridItem, Heading, Input, FormLabel, Select, Stack } from '@chakra-ui/react'
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 const Homevsrent = () => {
   const [state, setState] = useState({
     homePrice: 0,
@@ -44,22 +44,13 @@ const Homevsrent = () => {
       loanTerm,
       buyingClosingCosts,
       propertyTax,
-      propertyTaxIncrease,
       homeInsurance,
       hoaFee,
       maintenanceCost,
-      homeValueAppreciation,
-      costInsuranceIncrease,
       sellingClosingCosts,
       monthlyRentalFee,
       rentalFeeIncrease,
       rentersInsurance,
-      securityDeposit,
-      upfrontCost,
-      averageInvestmentReturn,
-      marginalFederalTaxRate,
-      marginalStateTaxRate,
-      taxFilingStatus,
     } = state;
     console.log("calculate cliked");
     // Calculate the total cost of buying
@@ -92,9 +83,9 @@ const Homevsrent = () => {
   return (
     <div className="calculator w-full">
       <div className="w-full text-center mb-4">
-        <Heading as="h3" size="xl" className="text-2xl relative inline-block">
+        <Heading as="h3" size="xl" className="!text-2xl relative inline-block">
           Rent vs. Buy Calculator
-        <div className="absolute bottom-0 left-0 right-0 m-auto top-[3rem] w-40 border-b-2 border-solid border-gray-500"></div>
+        <div className="absolute bottom-0 left-0 right-0 m-auto top-[2rem] w-40 border-b-2 border-solid border-gray-500"></div>
         </Heading>
       </div>
       <Grid templateColumns='repeat(2, 1fr)' gap={6}>
@@ -216,13 +207,13 @@ const Homevsrent = () => {
   </Button>
 </Stack>
       <div className="result">
-        <p>
+        <p className="!text-black">
           Total Cost of Buying: <span>${state.buyTotalCost.toFixed(2)}</span>
         </p>
-        <p>
+        <p className="!text-black">
           Total Cost of Renting: <span>${state.rentTotalCost.toFixed(2)}</span>
         </p>
-        <p>
+        <p className="!text-black">
           Recommendation: <span>{state.recommendation}</span>
         </p>
       </div>
