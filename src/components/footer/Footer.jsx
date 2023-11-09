@@ -12,13 +12,13 @@ const Footer = () => (
       <p className="text-lg font-semibold mt-4 text-center">{data.Name}</p>
      <div className='flex justify-center'>
        <div className="mt-2 text-center">
-        <a href={data.LinkedinURL} className="text-white hover:text-blue-400" target="_blank" rel="noopener noreferrer">
-          <img src={Linked} alt="LinkedIn" />
+        <a href={data.LinkedinURL} className="text-white w-12 h-12 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+          <img src={Linked} alt="LinkedIn" className='w-12 h-12' />
         </a>
       </div>
       <div className="mt-2 text-center">
-        <a href={`https://www.instagram.com/${data.InstaURL}`} className="text-white hover:text-blue-400" target="_blank" rel="noopener noreferrer">
-          <img src={Insta} alt="Instagram" />
+        <a href={`https://www.instagram.com/${data.InstaURL}`} className="text-white w-12 h-12 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+          <img src={Insta} alt="Instagram"  className='w-12 h-12' />
         </a>
         </div>
       </div>

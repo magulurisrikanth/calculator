@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Grid, GridItem, Heading, Input, FormLabel, Select, Stack } from '@chakra-ui/react'
 
 const MortgageForm = (props) => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,7 @@ const MortgageForm = (props) => {
     loanTerm: '',
     totalInterest: 0,
     yearlyPayments: [],
+    monthlyPayment: 0
   });
 
   const handleChange = (e) => {
@@ -15,6 +17,19 @@ const MortgageForm = (props) => {
 
     setFormData({ ...formData, [name]: value });
   };
+
+  const calculateMonthlyPayment = (principalAmount, interestRate, loanTerm) => {
+    const principal = parseFloat(principalAmount);
+    const annualInterestRate = parseFloat(interestRate) / 100; // Convert annual interest rate to a decimal
+    const monthlyInterestRate = annualInterestRate / 12; // Monthly interest rate
+    
+    const loanTermMonths = parseFloat(loanTerm) * 12; // Loan term in months
+    console.log("check 3 values", principal,annualInterestRate, monthlyInterestRate)
+    const monthlyPayment = (principal * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanTermMonths));
+    
+    console.log("calculate", monthlyPayment);
+    setFormData(prev => ({...prev, monthlyPayment}));
+  }
 
   const handleSubmit = () => {
     const principal = parseFloat(formData.principal);
@@ -39,8 +54,7 @@ const MortgageForm = (props) => {
     }
 
     setFormData({ ...formData, totalInterest, yearlyPayments });
-
-    props.calculateMonthlyPayment(formData.principal, formData.interestRate, formData.loanTerm);
+    calculateMonthlyPayment(formData.principal, formData.interestRate, formData.loanTerm);
   };
 
   const handleReset = () => {
@@ -56,7 +70,10 @@ const MortgageForm = (props) => {
   return (
     <div className="mortgage-form min-h-screen !bg-bg-color p-4 border border-gray-300 rounded-lg shadow-md mx-auto">
       <div className="w-full text-center mb-4">
-        <h3 className="text-2xl">Mortgage Details</h3>
+        <Heading as="h3" size="xl" className="!text-2xl relative inline-block">
+          Mortgage Details
+        <div className="absolute bottom-0 left-0 right-0 m-auto top-[2rem] w-40 border-b-2 border-solid border-gray-500"></div>
+        </Heading>
       </div>
       <div className="input-group">
         <label>Principal Amount ($):</label>
@@ -85,8 +102,8 @@ const MortgageForm = (props) => {
           onChange={handleChange}
         />
       </div>
-      <button onClick={handleSubmit}>Calculate Monthly Payment</button>
-      <button onClick={handleReset}>Reset</button>
+      <button onClick={handleSubmit} className='!bg-green-theme !text-neon-green p-3 text-lg'>Calculate Monthly Payment</button>
+      <button onClick={handleReset} className='!bg-green-theme !text-neon-green p-3 text-lg'>Reset</button>
       <div className="result">
         <p>Total Interest Paid: ${formData.totalInterest.toFixed(2)}</p>
       </div>

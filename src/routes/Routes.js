@@ -6,7 +6,7 @@ import loadable from '@loadable/component';
 
 const MortgageCalculator = loadable(() => import(/* webpackChunkName: "home" */ '../pages/MortgageCalculator'));
 const HomeVsRent = loadable(() => import(/* webpackChunkName: "solutions" */ '../pages/HomeVsRent'));
-const CDdeposit = loadable(() => import(/* webpackChunkName: "whoweare" */ '../pages/CDdeposit'));
+const CDdeposit = loadable(() => import(/* webpackChunkName: "cddeposit" */ '../pages/CDdeposit'));
 
 const AppRouter = () => {
   return (

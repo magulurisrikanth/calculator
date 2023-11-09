@@ -202,9 +202,9 @@ const Homevsrent = () => {
   </GridItem>
 </Grid>
 <Stack direction='row' spacing={4} align='center'>
-  <Button colorScheme='teal' variant='solid' onClick={calculateTotalCosts}>
+  <button onClick={calculateTotalCosts} className='!bg-green-theme !text-neon-green p-3 text-lg w-full'>
     Calculate
-  </Button>
+  </button>
 </Stack>
       <div className="result">
         <p className="!text-black">

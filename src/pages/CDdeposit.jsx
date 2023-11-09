@@ -18,11 +18,13 @@ function CDdeposit() {
   };
 
   return (
-    <div className="min-h-screen bg-bg-color p-4 border border-gray-300 rounded-lg shadow-md mx-auto ">
-      <Heading className="!text-2xl text-center py-4 text-black font-bold">
-        Certificate of Deposit Calculator
+    <div className="min-h-screen bg-bg-color p-4 border border-gray-300 rounded-lg shadow-md w-full">
+        <div className="w-full text-center mb-4">
+        <Heading as="h3" size="xl" className="!text-2xl relative inline-block">
+          Certificate of Deposit
         <div className="absolute bottom-0 left-0 right-0 m-auto top-[2rem] w-40 border-b-2 border-solid border-gray-500"></div>
-      </Heading>
+        </Heading>
+      </div>
       <CDForm onCalculate={calculateCD} />
       {result && <CDResult result={result} />}
       {result && (

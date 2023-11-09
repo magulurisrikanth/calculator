@@ -11,7 +11,7 @@ function CDForm({ onCalculate }) {
   };
 
   return (
-    <div className="w-1/3 mx-auto p-4">
+    <div className="w-full mx-auto p-4">
       <div className="mb-4">
         <label>Principal Amount</label>
         <input
@@ -39,7 +39,7 @@ function CDForm({ onCalculate }) {
           className="w-full p-2 border border-gray-300"
         />
       </div>
-      <button onClick={handleCalculate} className="bg-blue-500 text-white p-2 rounded">
+      <button onClick={handleCalculate} className='!bg-green-theme !text-neon-green p-3 text-lg w-full'>
         Calculate
       </button>
     </div>
