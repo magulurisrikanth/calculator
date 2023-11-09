@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "https://magulurisrikanth.github.io/calculator/static/css/main.98b5e7aa.css",
-    "main.js": "https://magulurisrikanth.github.io/calculator/static/js/main.cb3ee35c.js",
-    "cddeposit.js": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.1ab5a3ed.chunk.js",
+    "main.css": "https://magulurisrikanth.github.io/calculator/static/css/main.55cb2393.css",
+    "main.js": "https://magulurisrikanth.github.io/calculator/static/js/main.94801e58.js",
+    "cddeposit.js": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.de2fe5d0.chunk.js",
     "static/js/787.1532d880.chunk.js": "https://magulurisrikanth.github.io/calculator/static/js/787.1532d880.chunk.js",
     "static/js/208.17d164c8.chunk.js": "https://magulurisrikanth.github.io/calculator/static/js/208.17d164c8.chunk.js",
     "static/media/insta.svg": "https://magulurisrikanth.github.io/calculator/static/media/insta.2803ced157cd0a7fd7129e630afaf495.svg",
     "static/media/linkedin.svg": "https://magulurisrikanth.github.io/calculator/static/media/linkedin.4b7752955098155b8dffe8926df9f317.svg",
     "index.html": "https://magulurisrikanth.github.io/calculator/index.html",
-    "main.98b5e7aa.css.map": "https://magulurisrikanth.github.io/calculator/static/css/main.98b5e7aa.css.map",
-    "main.cb3ee35c.js.map": "https://magulurisrikanth.github.io/calculator/static/js/main.cb3ee35c.js.map",
-    "cddeposit.1ab5a3ed.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.1ab5a3ed.chunk.js.map",
+    "main.55cb2393.css.map": "https://magulurisrikanth.github.io/calculator/static/css/main.55cb2393.css.map",
+    "main.94801e58.js.map": "https://magulurisrikanth.github.io/calculator/static/js/main.94801e58.js.map",
+    "cddeposit.de2fe5d0.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.de2fe5d0.chunk.js.map",
     "787.1532d880.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/787.1532d880.chunk.js.map",
     "208.17d164c8.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/208.17d164c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98b5e7aa.css",
-    "static/js/main.cb3ee35c.js"
+    "static/css/main.55cb2393.css",
+    "static/js/main.94801e58.js"
   ]
 }
