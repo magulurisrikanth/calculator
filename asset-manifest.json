@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/calculator/static/css/main.8498e986.css",
-    "main.js": "/calculator/static/js/main.add3aeae.js",
-    "whoweare.js": "/calculator/static/js/whoweare.8856171e.chunk.js",
-    "static/js/787.1532d880.chunk.js": "/calculator/static/js/787.1532d880.chunk.js",
-    "static/js/208.17d164c8.chunk.js": "/calculator/static/js/208.17d164c8.chunk.js",
-    "static/media/insta.svg": "/calculator/static/media/insta.2803ced157cd0a7fd7129e630afaf495.svg",
-    "static/media/linkedin.svg": "/calculator/static/media/linkedin.4b7752955098155b8dffe8926df9f317.svg",
-    "index.html": "/index.html",
-    "main.8498e986.css.map": "/calculator/static/css/main.8498e986.css.map",
-    "main.add3aeae.js.map": "/calculator/static/js/main.add3aeae.js.map",
-    "whoweare.8856171e.chunk.js.map": "/calculator/static/js/whoweare.8856171e.chunk.js.map",
-    "787.1532d880.chunk.js.map": "/calculator/static/js/787.1532d880.chunk.js.map",
-    "208.17d164c8.chunk.js.map": "/calculator/static/js/208.17d164c8.chunk.js.map"
+    "main.css": "https://magulurisrikanth.github.io/calculator/static/css/main.8498e986.css",
+    "main.js": "https://magulurisrikanth.github.io/calculator/static/js/main.f4400fcf.js",
+    "cddeposit.js": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.1ab5a3ed.chunk.js",
+    "static/js/787.1532d880.chunk.js": "https://magulurisrikanth.github.io/calculator/static/js/787.1532d880.chunk.js",
+    "static/js/208.17d164c8.chunk.js": "https://magulurisrikanth.github.io/calculator/static/js/208.17d164c8.chunk.js",
+    "static/media/insta.svg": "https://magulurisrikanth.github.io/calculator/static/media/insta.2803ced157cd0a7fd7129e630afaf495.svg",
+    "static/media/linkedin.svg": "https://magulurisrikanth.github.io/calculator/static/media/linkedin.4b7752955098155b8dffe8926df9f317.svg",
+    "index.html": "https://magulurisrikanth.github.io/calculator/index.html",
+    "main.8498e986.css.map": "https://magulurisrikanth.github.io/calculator/static/css/main.8498e986.css.map",
+    "main.f4400fcf.js.map": "https://magulurisrikanth.github.io/calculator/static/js/main.f4400fcf.js.map",
+    "cddeposit.1ab5a3ed.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/cddeposit.1ab5a3ed.chunk.js.map",
+    "787.1532d880.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/787.1532d880.chunk.js.map",
+    "208.17d164c8.chunk.js.map": "https://magulurisrikanth.github.io/calculator/static/js/208.17d164c8.chunk.js.map"
   },
   "entrypoints": [
-    "/calculator/static/css/main.8498e986.css",
-    "/calculator/static/js/main.add3aeae.js"
+    "static/css/main.8498e986.css",
+    "static/js/main.f4400fcf.js"
   ]
 }
